@@ -1,0 +1,92 @@
+@import url('../colors.css');
+
+.container{
+   display: flex;
+   border-radius: 0.5rem;
+   overflow: hidden;
+}
+
+.container .img{
+   width: 290px;
+   background-image: url('../assets/image-product-desktop.jpg');
+   background-position: center;
+   background-size: cover;
+}
+
+.container .section{
+    width: 290px;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+.container .header{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color : var(--dark-grayish-blue);
+}
+
+.container .title{
+    margin-top: 1rem;
+    font-family: 'Fraunces';
+    font-size: 30px;
+    color : var(--very-dark-blue);
+}
+
+.container .text{
+    margin-top: 1rem;
+    color : var(--dark-grayish-blue);
+}
+
+.container .price{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.container .price .price-current{
+    margin-right: 1rem;
+    font-family: 'Fraunces';
+    font-size: 30px;
+    color : var(--dark-cyan);
+}
+
+.container .price .price-old{
+    text-decoration: line-through;
+    color : var(--dark-grayish-blue);
+}
+
+.container .btn{
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 2rem;
+    background-color: var(--dark-cyan);
+    color : var(--white);
+    font-weight: 700;
+    text-transform: none;
+}
+
+@media (max-width : 600px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .img{
+        width: 350px;
+        height: 200px;
+        background-image: url('../assets/image-product-mobile.jpg');
+    }
+
+    .container .section{
+        width: 350px;
+        padding: 1.5rem;
+    }
+
+    .container .title{
+        margin-top: 0.5rem;
+    }
+
+    .container .btn{
+        margin-top: 1rem;
+    }
+}
